@@ -21,7 +21,7 @@ const App = () => {
             }
 
             // Send POST request to the backend
-            const res = await axios.post('http://localhost:3000/bfhl', jsonData);
+            const res = await axios.post('https://devchallenge-ishikas-projects-694b415b.vercel.app/bfhl', jsonData);
             setResponse(res.data); // Set the response data
         } catch (error) {
             console.error("Error:", error);
